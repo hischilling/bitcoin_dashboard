@@ -1,0 +1,22 @@
+[project]
+name = "bitcoin_dashboard"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+[contracts.bitcoin_dashboard-contract]
+path = "contracts/bitcoin_dashboard-contract.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
